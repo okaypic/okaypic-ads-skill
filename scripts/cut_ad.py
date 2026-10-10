@@ -94,11 +94,14 @@ def fade(seg, delay=0.0):
 
 
 def overlays(seg):
-    """drawtext filters: super + sub in the top band, captions in a box near the bottom."""
+    """drawtext filters: super + sub in the top band (or "super_at": "lower", just above the
+    captions, when a face is in the top of the frame), captions in a box near the bottom."""
     f = []
-    top = int(H * 0.12)
+    lower = seg.get("super_at") == "lower"
+    top = int(H * (0.60 if lower else 0.12))
     if seg.get("super") and "clip" in seg:
-        f.append(f"drawbox=x=0:y=0:w=iw:h={int(H * 0.25)}:color=black@0.45:t=fill")
+        y0 = int(H * 0.56) if lower else 0
+        f.append(f"drawbox=x=0:y={y0}:w=iw:h={int(H * 0.17 if lower else H * 0.25)}:color=black@0.40:t=fill")
     if seg.get("super"):
         size = fit(seg["super"], 118 * K, W * 0.9)
         f.append(f"drawtext=fontfile={font_for(seg['super'])}:textfile={textfile(seg['super'])}:fontsize={size}:"

@@ -25,6 +25,8 @@
 | still | `still` = an image path in the project (the user's screenshots, packaging, product photos), `seconds`, optional `crop` (`w:h:x:y` in source pixels), `super`, `sub` |
 | endcard | `image` (the product, edges are feathered into `colors.bg`), `title`, `lines` (first one in the accent colour), `small` (legal / small print), `seconds` |
 
+- `super_at: "lower"` puts the super just above the captions instead of the top band: use it
+  whenever a face is in the top of the frame (most vertical shots with a person). Check the frame.
 - `fade: false` keeps a super steady when consecutive segments repeat it.
 - Supers sit in the top band (on clips, over a dark band), captions near the bottom; long text is
   fitted or wrapped automatically.
