@@ -106,7 +106,7 @@ premium; matching the goal: a lifestyle video wants a line a person would say, n
 Also ask the format first if not known: length (15 / 30 / 40 s), main ratio (9:16 for
 TikTok/Reels/Shorts, 16:9 for YouTube/web), language of the dialogue.
 
-Offer 3 stories, each 2–3 lines: the hook (first 2 s), what the actor does with the product, how
+Offer 3 stories that follow the chosen purpose and style, each 2–3 lines: the hook (first 2 s), what happens with the product, how
 each chosen feature is shown, the close. Make them genuinely different: e.g. a problem/solution
 moment, a day-in-the-life montage across places, a direct-to-camera demo, a skit. Plus their own.
 Note which shots need an actor. Store the choice in `story`.
