@@ -88,6 +88,16 @@ ad account). Store it in `ad.json` `goal`. It decides everything after it: which
 the tone of the taglines, whether there is a price or CTA, what the end card says. Leave out
 whatever the goal doesn't need (a lifestyle video carries no price even if the user mentioned one).
 
+Then the style, as separate small choices (skip what the user already said):
+
+- **kind of video**: a scripted skit with a little story / a lifestyle showcase (the product in
+  everyday moments) / talking to camera (UGC-style review or tip) / product only (hands, close-ups)
+- **people on camera**: an actor / only hands / nobody
+- **sound**: on-camera dialogue / a voice-over / music and ambience only, no words
+- **mood** if it matters: calm, cosy, funny, premium, energetic
+
+Store them in `ad.json` `style`. The stories in step 5 must follow these choices.
+
 ### 3. The most important feature
 
 Ask what matters most about the product to the people who buy it, for this goal. Offer 3–5 candidates you drew
