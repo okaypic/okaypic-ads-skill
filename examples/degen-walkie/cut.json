@@ -1,0 +1,126 @@
+{
+ "output": "degen_walkie",
+ "segments": [
+  {
+   "clip": "01_a",
+   "in": 0.0,
+   "out": 5.0,
+   "super": "Trade by voice.",
+   "sub": "Anywhere.",
+   "captions": [
+    {
+     "start": 0.5,
+     "end": 4.4,
+     "text": "“Long SOL, five x, five hundred USDC.”"
+    }
+   ]
+  },
+  {
+   "still": "product/screen-1.png",
+   "seconds": 2.4,
+   "crop": "502:505:0:0",
+   "super": "SEE IT.",
+   "sub": "Every detail on one ticket."
+  },
+  {
+   "clip": "press",
+   "in": 0.8,
+   "out": 3.8,
+   "super": "PRESS IT.",
+   "sub": "One press sends it."
+  },
+  {
+   "clip": "04_a",
+   "in": 0.0,
+   "out": 6.2,
+   "super": "Delegated trading.",
+   "sub": "Your private key never leaves your wallet.",
+   "captions": [
+    {
+     "start": 0.35,
+     "end": 2.1,
+     "text": "“Degen Walkie trades for me,”"
+    },
+    {
+     "start": 2.7,
+     "end": 4.6,
+     "text": "“but it never touches my private key.”"
+    },
+    {
+     "start": 4.95,
+     "end": 6.1,
+     "text": "“Super safe.”"
+    }
+   ]
+  },
+  {
+   "still": "product/screen-4.png",
+   "seconds": 2.2,
+   "crop": "500:440:0:15",
+   "super": "Can trade.",
+   "sub": "Can't withdraw. Revoke any time."
+  },
+  {
+   "clip": "05_b",
+   "in": 0.5,
+   "out": 7.8,
+   "super": "The $SOL room.",
+   "sub": "Traders worldwide, live-translated.",
+   "captions": [
+    {
+     "start": 0.8,
+     "end": 2.5,
+     "text": "“Who's watching the CPI print?”"
+    },
+    {
+     "start": 2.7,
+     "end": 5.1,
+     "text": "JP  “Watching. Funding just flipped!”"
+    },
+    {
+     "start": 5.25,
+     "end": 7.0,
+     "text": "BR  “I'm shorting this pump!”"
+    }
+   ]
+  },
+  {
+   "still": "product/front.png",
+   "seconds": 1.3,
+   "super": "One pocket terminal.",
+   "sub": "Perps on Hyperliquid · Pacifica · Lighter"
+  },
+  {
+   "still": "product/right.png",
+   "seconds": 1.3,
+   "fade": false,
+   "super": "One pocket terminal.",
+   "sub": "Spot & memes · Market news"
+  },
+  {
+   "still": "product/screen-3.png",
+   "seconds": 1.4,
+   "crop": "502:410:0:0",
+   "fade": false,
+   "super": "One pocket terminal.",
+   "sub": "Ask about your book."
+  },
+  {
+   "endcard": {
+    "image": "product/front.png",
+    "title": "DEGEN WALKIE",
+    "lines": [
+     "Your trading terminal, in your pocket.",
+     "Genesis Edition · Pre-order $99",
+     "Fully refundable"
+    ],
+    "small": "Ape responsibly · Perps in eligible regions only · 4G clip sold separately",
+    "seconds": 3.8
+   }
+  }
+ ],
+ "colors": {
+  "bg": "0x131518",
+  "accent": "0x3ef0a0"
+ }
+}

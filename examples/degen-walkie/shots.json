@@ -1,0 +1,56 @@
+{
+  "style": "Vertical cinematic live-action ad, shallow depth of field, night city, realistic.",
+  "ratio": "9:16",
+  "resolution": "768p",
+  "seeds": [
+    1,
+    2
+  ],
+  "shots": [
+    {
+      "id": "01",
+      "duration": 5,
+      "refs": [
+        "actor_leo",
+        "product"
+      ],
+      "frame": {
+        "prompt": "Medium close-up, night city street after rain, wet asphalt reflecting neon signs and car lights, bokeh. The man from <Picture 1> walks toward camera, holding the device in his right hand at mouth height but a little forward and to the side, so his face stays clear and the device is large and prominent in the frame, closer to the camera than his face, thumb on the glass, speaking into it with focus. ORIENTATION, important: the device's glass screen faces HIS FACE, not the camera. The camera sees the BACK of the device, as in the back views of <Picture 2>, with a slim magnetic 4G battery clip attached to the back exactly like the fourth view in <Picture 2>, clearly visible. Only the screen's soft green glow spills onto his face.",
+        "take": 2,
+        "model": "gpt-image-2"
+      },
+      "first_frame": "frames/01_t1.png",
+      "prompt": "The man from <Picture 1> walks slowly along the wet neon street, holding the device from <Picture 2> near his mouth like a walkie-talkie, and says clearly and quickly, like a radio call: \"Long SOL, five x, five hundred USDC.\" The device's screen faces him the whole time; we see its back with the 4G clip. Rain, distant traffic, city ambience."
+    },
+    {
+      "id": "04",
+      "duration": 6,
+      "refs": [
+        "actor_leo",
+        "product"
+      ],
+      "frame": {
+        "prompt": "Medium close-up inside a night metro car, warm overhead light, blurred city lights streaking past the window behind him. The man from <Picture 1> sits relaxed, holding the device loosely in his right hand at chest height, and looks straight into the camera with a calm, confident half smile, about to speak. The device's screen faces the camera here and shows a dark trading UI with green numbers.",
+        "take": 1,
+        "model": "gpt-image-2"
+      },
+      "first_frame": "frames/04_t1.png",
+      "prompt": "Inside the moving night metro car, the man from <Picture 1> holds the device from <Picture 2> at chest height and says to the camera, calm and confident, in a low American voice: \"Degen Walkie trades for me, but it never touches my private key. Super safe.\" A small knowing smile at the end. Train rumble, soft rail clatter."
+    },
+    {
+      "id": "05",
+      "duration": 8,
+      "refs": [
+        "actor_leo",
+        "product"
+      ],
+      "frame": {
+        "prompt": "Medium close-up in a cozy café at night, warm lamps, a window with city lights, a coffee cup on the table. The man from <Picture 1> leans in, holding the device near his mouth like a walkie-talkie, talking with an amused, curious expression, as if chatting on a radio. ORIENTATION, important: the device's glass screen faces HIS FACE, not the camera. The camera sees the BACK of the device, as in the back views of <Picture 2>; only the screen's soft green glow spills onto his chin and fingers.",
+        "take": 1,
+        "model": "gpt-image-2"
+      },
+      "first_frame": "frames/05_t1.png",
+      "prompt": "In the warm night café, the man from <Picture 1> holds the device from <Picture 2> near his mouth like a walkie-talkie and asks, curious: \"Who's watching the CPI print?\" He lowers it a little and listens. From the device's small speaker, first a young Japanese woman answers in Japanese: \"見てるよ、ファンディングが反転した！\" then a cheerful Brazilian man answers in Portuguese: \"Eu tô vendido nessa alta!\" He grins and nods, like chatting on a radio with friends around the world. The device's screen faces him the whole time. Soft café ambience."
+    }
+  ]
+}

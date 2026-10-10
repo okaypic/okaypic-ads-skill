@@ -1,0 +1,4 @@
+.env
+*.2048.jpg
+__pycache__/
+.okaypic_req_*.json

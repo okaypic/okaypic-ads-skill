@@ -1,0 +1,71 @@
+{
+  "product": {
+    "name": "Degen Walkie",
+    "description": "A pocket perp-trading terminal you talk to.",
+    "size": "about 9 x 6 cm and 1 cm thin, fits in one hand like a deck of cards",
+    "usage": "held in one hand; hold the mic on the glass and talk into it like a walkie-talkie; thumb presses the trade key on the right edge",
+    "images": [
+      {
+        "file": "product/front.png",
+        "shows": "front view: glass screen with a chart, thumb wheel and mint trade key on the right edge",
+        "sheet": true
+      },
+      {
+        "file": "product/right.png",
+        "shows": "right edge three-quarter view: the mint trade key and the knurled wheel",
+        "sheet": true
+      },
+      {
+        "file": "product/back.png",
+        "shows": "back: camera lens at the top, six gold contacts, speaker grille",
+        "sheet": true
+      },
+      {
+        "file": "product/back-4g.png",
+        "shows": "back with the magnetic 4G clip attached",
+        "sheet": true
+      },
+      {
+        "file": "product/screen-1.png",
+        "shows": "UI screenshot: the voice order ticket",
+        "sheet": false
+      },
+      {
+        "file": "product/screen-4.png",
+        "shows": "UI screenshot: agent key permissions (trade allowed, withdraw impossible)",
+        "sheet": false
+      }
+    ],
+    "summary": "A pocket perp-trading terminal you talk to: hold the mic, say the trade, check the ticket, press the physical trade key.",
+    "sides": "front: glass screen; back: camera lens at the top, six gold contacts, speaker grille, optional magnetic 4G clip; right edge (seen from the front): mint trade key and knurled thumb wheel",
+    "avoid": [
+      "perps only in eligible regions",
+      "4G clip is sold separately"
+    ]
+  },
+  "id": "degen-walkie-example",
+  "features": [
+    "Trade by voice, anywhere",
+    "Delegated trading: the private key never leaves your wallet",
+    "Voice rooms with traders worldwide, live-translated",
+    "One pocket terminal: perps on three venues, spot, memes, news"
+  ],
+  "tagline": "Your trading terminal, in your pocket.",
+  "story": {
+    "title": "Anywhere",
+    "logline": "Street, metro, café: he trades, stays safe and talks to traders worldwide, all by voice."
+  },
+  "format": {
+    "length": 30,
+    "ratio": "9:16",
+    "language": "en",
+    "exports": [
+      "9:16",
+      "16:9",
+      "1:1"
+    ]
+  },
+  "actor": {
+    "preset": "leo"
+  }
+}
