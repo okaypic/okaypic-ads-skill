@@ -1,6 +1,6 @@
 # ad.json — the brief
 
-Written by the agent during the interview (SKILL.md steps 1–4), read by the scripts.
+Written by the agent during the interview (SKILL.md steps 1–5), read by the scripts.
 
 ```json
 {
@@ -20,6 +20,7 @@ Written by the agent during the interview (SKILL.md steps 1–4), read by the sc
       {"file": "product/ticket.png", "shows": "UI screenshot: order ticket", "sheet": false}
     ]
   },
+  "goal": "sell now | lifestyle | launch | demo (the user's words)",
   "features": ["Trade by voice, anywhere", "Your private key never leaves your wallet"],
   "tagline": "Your trading terminal, in your pocket.",
   "story": {"title": "Anywhere", "logline": "Street, metro, café: he trades by voice in each.", "choice": "B"},

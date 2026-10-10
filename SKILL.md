@@ -70,19 +70,35 @@ them back to the user in five lines and fix what's wrong. Mark the images for th
 (`"sheet": true` for up to 4 whole-product views, `"sheet": "detail"` for close-ups) and run
 `python scripts/product_sheet.py <ad>`; look at `refs/product.png`.
 
-### 2. The most important feature
+### 2. The purpose of the video
 
-Ask what matters most about the product to the people who buy it. Offer 3–5 candidates you drew
+Before features, ask what the video is for — never assume it is a sales ad. Typical answers:
+
+- **sell now**: offer, price, a clear call to action (shop link, "order today")
+- **lifestyle / recommendation** (种草): show the product in everyday life so people want it; no
+  price, no hard sell, it should feel like a real person's post
+- **launch / brand**: introduce something new, build recognition; tagline and name, maybe a date
+- **explain / demo**: show how it works, step by step
+
+Ask where it will be posted too if it changes the tone (TikTok/Reels feed, a product page, an
+ad account). Store it in `ad.json` `goal`. It decides everything after it: which features lead,
+the tone of the taglines, whether there is a price or CTA, what the end card says. Leave out
+whatever the goal doesn't need (a lifestyle video carries no price even if the user mentioned one).
+
+### 3. The most important feature
+
+Ask what matters most about the product to the people who buy it, for this goal. Offer 3–5 candidates you drew
 from the description (short, benefit first: "orders by voice, anywhere" rather than "has a
 microphone"), multi-select, plus their own. One main feature carries the ad; at most two more
 get a beat each. Store them in `ad.json` `features`.
 
-### 3. Tagline
+### 4. Tagline
 
 Offer 3–4 taglines built on the main feature, different in tone (plain / bold / playful /
-premium), ≤ 7 words each, plus their own. Store it in `tagline`. It closes the ad on the end card.
+premium; matching the goal: a lifestyle video wants a line a person would say, not a slogan),
+≤ 7 words each, plus their own. Store it in `tagline`. It closes the ad on the end card.
 
-### 4. Story
+### 5. Story
 
 Also ask the format first if not known: length (15 / 30 / 40 s), main ratio (9:16 for
 TikTok/Reels/Shorts, 16:9 for YouTube/web), language of the dialogue.
@@ -97,7 +113,7 @@ Actor (when the story has one): `python scripts/actors.py list` shows okaypic's 
 user the sheet links of 2–3 that fit, or offer their own photo / voice (`actors.py custom`; only
 of people who agreed), or no actor. Then `python scripts/actors.py use <ad> <id> --lang en`.
 
-### 5. Script and shot list
+### 6. Script and shot list
 
 Write `shots.json` (`docs/shots-format.md`) and `cut.json` (`docs/cut-format.md`) together, then
 show the user one table: time, picture, spoken line, super (on-screen text). Rules:
@@ -108,12 +124,12 @@ show the user one table: time, picture, spoken line, super (on-screen text). Rul
   sub-line explains in ≤ 8.
 - Real screens, packaging, labels and close-ups come from the user's images as still inserts
   (1.5–2.5 s), never generated: generated text is unreliable.
-- End card: product image, name, tagline, price/CTA and the user's small print.
+- End card: product image, name, tagline; price/CTA only when the goal is to sell; the user's small print.
 - Only claims the user gave you. No invented prices, numbers, awards or certifications.
 
 Get the user's OK on the table and the cost estimate before generating anything.
 
-### 6. Keyframes — the user checks and iterates
+### 7. Keyframes — the user checks and iterates
 
 Every shot where the actor and the product appear together gets a keyframe first: a still the
 clip will start from. Products differ too much to get right automatically, so this is a review
@@ -132,7 +148,7 @@ yourself before showing it. Then show the user each frame and offer:
 Each try costs one image. On approval run `python scripts/gen_frames.py <ad> --approve <id>`.
 Only approved frames go to video.
 
-### 7. Clips
+### 8. Clips
 
 `python scripts/gen_clips.py <ad> --quote`, tell the user the line it prints, wait for OK, then
 `python scripts/gen_clips.py <ad>` (detached; tail `takes/run.log`; 5–15 min per batch). Look at
@@ -141,7 +157,7 @@ shape, flips to the wrong side, or the actor's face drifts; prefer the take wher
 delivered cleanly (`ffmpeg -i take.mp4 -af silencedetect=n=-32dB:d=0.25 -f null -` shows where
 speech sits). Re-render only misfires (`gen_clips.py <ad> 03`), after fixing the prompt.
 
-### 8. Cut
+### 9. Cut
 
 Fill `cut.json` picks, trims and caption times (from silencedetect), set `colors` from the
 product's palette, then `python scripts/cut_ad.py <ad>` → `out/<name>_9x16.mp4`, `_16x9`, `_1x1`.
