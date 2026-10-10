@@ -51,8 +51,9 @@ Look at every image yourself. With several images, work out what each one is and
 - **screens / UI, packaging, logo**: good as inserts in the cut, exactly as they are
 - **variants**: other colours or sizes — ask which one the ad shows
 
-Then ask about whatever is still unclear, until you can answer all of these (ask only the
-missing ones):
+The user does not prepare a brief; you work it out and ask. First take everything you can from
+the images and the description, then ask about whatever is still unclear and matters for the ad,
+until you can answer all of these (ask only the missing ones, with options to pick):
 
 1. What exactly is it, in one sentence a stranger understands?
 2. Real size (cm / in, or "fits in one hand", "the size of a coffee mug"). Video models get scale
