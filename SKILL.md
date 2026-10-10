@@ -30,6 +30,11 @@ custom answer; use multiSelect for features). In other agents, number the option
 "or tell me your own". Recommend one option when you have a reason, and say the reason in a few
 words. Don't ask what you can see in the images or read in the description.
 
+Every creative decision (feature, tagline, story, script, keyframe) ends in **proposals**: always
+put 2–4 concrete, finished options in front of the user, whatever they chose before, and let them
+pick one, write their own, or comment ("warmer", "shorter", "less salesy"). On a comment, revise
+and propose again. Never move on with a creative choice the user hasn't seen.
+
 ## Workflow
 
 Costs are small but real: an image is about US$0.03, a 5 s H3 clip at 768p US$0.05. Tell the
