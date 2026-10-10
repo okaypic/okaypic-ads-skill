@@ -65,6 +65,9 @@ until you can answer all of these (ask only the missing ones, with options to pi
 6. Anything that must not be shown or claimed (regulated claims, competitor names, prices that
    may change, regions)?
 
+Price, offer and what's in the box only matter for a sales video: ask them after the purpose
+(step 2), and only if the goal is to sell.
+
 Write the answers into `ad.json` (`product.summary`, `size`, `usage`, `sides`, `avoid`). Read
 them back to the user in five lines and fix what's wrong. Mark the images for the product sheet
 (`"sheet": true` for up to 4 whole-product views, `"sheet": "detail"` for close-ups) and run
