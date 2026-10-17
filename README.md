@@ -29,11 +29,11 @@ describe + photos → questions → feature → tagline → story → actor → 
 ## Install
 
 ```bash
-npx skills add shipunyc/okaypic-ads-skill          # any agent that reads SKILL.md (skills.sh)
+npx skills add okaypic/okaypic-ads-skill          # any agent that reads SKILL.md (skills.sh)
 # or by hand, for one project
-git clone https://github.com/shipunyc/okaypic-ads-skill .claude/skills/okaypic-ads
+git clone https://github.com/okaypic/okaypic-ads-skill .claude/skills/okaypic-ads
 # or for every project
-git clone https://github.com/shipunyc/okaypic-ads-skill ~/.claude/skills/okaypic-ads
+git clone https://github.com/okaypic/okaypic-ads-skill ~/.claude/skills/okaypic-ads
 ```
 
 Then in Claude Code: *"make a 30-second ad for my product"* and attach or point to the photos.
