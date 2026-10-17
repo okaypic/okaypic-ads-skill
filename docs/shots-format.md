@@ -29,7 +29,7 @@
 | `style` | Prepended to every keyframe and clip prompt. Look and place, not story. |
 | `ratio` | Main ratio of the ad (`9:16`, `16:9`, `1:1`). Keyframes and clips use it; other export ratios are derived in the cut. |
 | `resolution` | `768p` (US$0.01/s) or `480p` (US$0.007/s). |
-| `effort` | Optional, `1x` (default) / `1.5x` / `2x` — more sampling steps, per shot or as a default. At 4 steps H3 sometimes ignores a cut the prompt specifies and close-up skin can look waxy; higher tiers fix that, cost 1.2x / 1.4x and **render ~1.4x / ~1.9x slower** (more when demand is high). 480p / 768p only. An ad's hero close-up may be worth it; a 3-second product shot is not. |
+| `effort` | Optional, `1x` (default) / `1.5x` / `2x` — more sampling steps, per shot or as a default. At 4 steps H3 sometimes ignores a cut the prompt specifies and close-up skin can look waxy; higher tiers fix that, cost 1.3x / 1.6x and **render ~1.4x / ~1.9x slower** (more when demand is high). 480p / 768p only. An ad's hero close-up may be worth it; a 3-second product shot is not. |
 | `seeds` | Takes per shot. 2 is the sweet spot. |
 | `shots[].id` | Short, unique, e.g. `01`. Takes are saved as `takes/<id>_a.mp4`, `_b`. |
 | `refs` | Images in `refs/` by name (`product`, `product_detail`, `actor_<id>`) → `<Picture 1>`, `<Picture 2>`… in this order, for both the keyframe and the clip. ≤ 9. |
