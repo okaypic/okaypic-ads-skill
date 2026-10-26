@@ -42,6 +42,12 @@ Requirements: Python 3.9+, `ffmpeg` + `ffprobe` on PATH, an okaypic API key
 (`OKAYPIC_API_KEY` in the environment or a `.env` file). Get a key at
 https://okaypic.com/api-docs . New accounts get a small free credit; top up from US$2.
 
+No account? An agent with a USDC wallet (x402: Base, Solana, Polygon, Arbitrum, Avalanche or
+Monad) can buy credit itself with `POST https://api.okaypic.com/api/agent/topup?amount=5` and save
+the returned key with `python scripts/okaypic_api.py save-key okpk_...`. The skill never touches
+wallet keys. Spending stops at `OKAYPIC_MAX_SPEND_USD` (default US$5 per project) until the user
+says to go on. Details in SKILL.md.
+
 ## Preset actors
 
 Six AI-generated actors (no real people), each with a reference sheet and a fixed voice in
