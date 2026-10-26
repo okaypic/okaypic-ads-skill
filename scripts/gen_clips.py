@@ -24,7 +24,7 @@ import sys
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from okaypic_api import TOP_UP_URL, X402_DOCS, balance_cents, budget_left_cents, budget_limit_cents, data_uri, download, h3_cost_cents, record_spend, request, usd  # noqa: E402
+from okaypic_api import TOP_UP_URL, X402_DOCS, balance_cents, budget_left_cents, budget_limit_cents, claim_url, data_uri, download, h3_cost_cents, record_spend, request, usd  # noqa: E402
 from ad_project import load, project_id, ref_path, voice_path  # noqa: E402
 
 MAX_INFLIGHT = 18
@@ -215,6 +215,10 @@ def main():
         remaining = [k for k, _, _ in work if state.get(k, {}).get("status") != "completed"]
         if not inflight:
             print(f"ALL DONE. completed={len(work) - len(remaining)}/{len(work)} failed={remaining}", flush=True)
+            claim = claim_url()
+            if claim:
+                print(f"To see these takes on okaypic.com and keep the balance in your own account, open {claim} "
+                      "and sign in with Google.", flush=True)
             break
         print(f"... {len(inflight)} in flight, {len(remaining)} remaining", flush=True)
         time.sleep(POLL_SECONDS)
